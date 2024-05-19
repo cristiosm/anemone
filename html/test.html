@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Încărcată</title>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script>
+        // Folosim JavaScript pentru a încărca conținutul
+        // din link și a-l afișa în div-ul cu id-ul "content"
+        fetch('https://raw.githubusercontent.com/cristiosm/anemone/main/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('A apărut o eroare:', error);
+            });
+    </script>
+</body>
+</html>

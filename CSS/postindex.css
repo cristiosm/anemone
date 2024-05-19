@@ -1,0 +1,51 @@
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 450px;  
+  width: auto;
+}
+
+.item {
+  text-align: center;
+  position: relative;
+  max-height: 450px; 
+  width: auto;
+  padding: 13px;
+
+}
+
+.item img {
+  max-height: 450px;  
+  width: auto;
+  max-width: 100%;
+  border-radius: 3px;
+  transition: transform 1.5s ease, opacity 0.4s ease;
+}
+
+.item:hover img {
+  transform: scale(1.1);
+  transition-delay: 0.07s, 0s;
+
+}
+
+.item .image-text {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  font-size: 50px;
+}
+
+.item:hover .image-text {
+  display: block;
+}
+
+.item:not(:hover) .image-text {
+  display: none;
+}

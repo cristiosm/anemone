@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="../images/no2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="../images/anemone.png" alt="Logo" class="logo default" id="logo-default">
+                <img src="../images/anemonetear.png" alt="Scrolled Logo" class="logo scrolled" id="logo-scrolled">
+            </a>
+        </div>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="captures.html">captures</a></li>
+                <li><a href="design.html">design</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="brand-info">
+        <p>Textul despre brandul tău sau orice altceva dorești să afișezi aici...</p>
+    </section>
+
+    <script>
+window.addEventListener('scroll', function() {
+    var scrolled = window.scrollY;
+    var defaultLogo = document.getElementById('logo-default');
+    var scrolledLogo = document.getElementById('logo-scrolled');
+
+    if (scrolled > 0) {
+        defaultLogo.style.opacity = '0'; // Face logo-ul implicit transparent
+        scrolledLogo.style.opacity = '1'; // Face logo-ul pentru scroll vizibil
+    } else {
+        defaultLogo.style.opacity = '1'; // Face logo-ul implicit vizibil
+        scrolledLogo.style.opacity = '0'; // Face logo-ul pentru scroll transparent
+    }
+});
+
+    </script>
+</body>
+</html>
