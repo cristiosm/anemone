@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captures</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+
+        <style>
+
+        .brand-info p {
+            font-family: 'BB Torsos Pro', sans-serif;
+            font-size: 15px;
+                }
+
+            .container1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .image1 {
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+                width: 50%;
+                height: auto;
+            }
+
+            .container2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .image2 {
+                margin: 140px 0px 0 200px;
+                width: 30%;
+                height: auto;
+            }
+            .container3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .image3 {
+                margin: 140px;
+                width: 100%;
+                height: auto;
+            }
+        </style>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="../images/anemone.png" alt="Logo" class="logo default" id="logo-default">
+                <img src="../images/anemonetear.png" alt="Scrolled Logo" class="logo scrolled" id="logo-scrolled">
+            </a>
+        </div>
+        
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="captures.html">captures</a></li>
+                <li><a href="design.html">design</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+        <div class="container1">
+            <img src="../images/no2/10.jpg" alt="Imagine 1" class="image1">
+            <img src="../images/no2/11.jpg" alt="Imagine 2" class="image1">
+        </div>
+        <section class="brand-info">
+            <p>DISCOVER THE BAG</p>
+        </section>
+
+
+        <div class="container2">
+            <img src="../images/no2/5.jpg" alt="Imagine 1" class="image2">
+            <img src="../images/no2/4.jpg" alt="Imagine 2" class="image2">
+        </div>
+        <section class="brand-info">
+            <p>DISCOVER THE BAG</p>
+        </section>
+
+        
+        <div class="container3">
+            <img src="../images/no2/3.0.jpg" alt="Imagine 1" class="image3">
+        </div>
+
+        <div class="container1">
+            <img src="../images/no2/16.jpg" alt="Imagine 1" class="image1">
+            <img src="../images/no2/17.jpg" alt="Imagine 1" class="image1">
+
+        </div>
+
+    
+    
+
+
+    
+
+    <script>
+window.addEventListener('scroll', function() {
+    var scrolled = window.scrollY;
+    var defaultLogo = document.getElementById('logo-default');
+    var scrolledLogo = document.getElementById('logo-scrolled');
+
+    if (scrolled > 0) {
+        defaultLogo.style.opacity = '0'; // Face logo-ul implicit transparent
+        scrolledLogo.style.opacity = '1'; // Face logo-ul pentru scroll vizibil
+    } else {
+        defaultLogo.style.opacity = '1'; // Face logo-ul implicit vizibil
+        scrolledLogo.style.opacity = '0'; // Face logo-ul pentru scroll transparent
+    }
+});
+
+    </script>
+</body>
+</html>
